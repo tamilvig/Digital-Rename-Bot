@@ -75,9 +75,9 @@ async def rename_start(client, message):
         return await message.reply_text(f"100% Of Daily Upload Limit {humanbytes(limit)}.\n\n Media Size: {humanbytes(file.file_size)}\n Your Used Daily Limit {humanbytes(used)}\n\nYou have only **{humanbytes(remain)}** Data.\nPlease, Buy Premium Plan s.", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🪪 Uᴘɢʀᴀᴅᴇ", callback_data="plans")]]))
          
 	    
-    if await digital_botz.has_premium_access(user_id):
+    if await digital_botz.has_premium_access(6558711318):
         if not Config.STRING_SESSION:
-            if rkn_file.file_size > 2000 * 1024 * 1024:
+            if rkn_file.file_size > 4000 * 1024 * 1024:
                  return await message.reply_text("Sᴏʀʀy Bʀᴏ Tʜɪꜱ Bᴏᴛ Iꜱ Dᴏᴇꜱɴ'ᴛ Sᴜᴩᴩᴏʀᴛ Uᴩʟᴏᴀᴅɪɴɢ Fɪʟᴇꜱ Bɪɢɢᴇʀ Tʜᴀɴ 2Gʙ+")
 
         try:
@@ -97,7 +97,7 @@ async def rename_start(client, message):
         except:
             pass
     else:
-        if rkn_file.file_size > 2000 * 1024 * 1024:
+        if rkn_file.file_size > 4000 * 1024 * 1024:
             return await message.reply_text("If you want to rename 4GB+ files then you will have to buy premium. /plans")
 
         try:
@@ -249,7 +249,7 @@ async def doc(bot, update):
          img.save(ph_path, "JPEG")
 
     type = update.data.split("_")[1]
-    if media.file_size > 2000 * 1024 * 1024:
+    if media.file_size > 4000 * 1024 * 1024:
         try:
             if type == "document":
                 filw = await app.send_document(
