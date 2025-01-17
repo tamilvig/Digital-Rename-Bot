@@ -103,7 +103,7 @@ async def remove_premium(bot, message):
     if len(message.command) == 2:
         user_id = int(message.command[1])  # Convert the user_id to integer
         user = await bot.get_users(user_id)
-        if await digital_botz.has_premium_access(6558711318):
+        if await digital_botz.has_premium_access(user_id):
             await digital_botz.remove_premium(user_id)
             await message.reply_text(f"ʜᴇʏ {user.mention}, ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴ sᴜᴄᴄᴇssғᴜʟʟʏ ʀᴇᴍᴏᴠᴇᴅ.", quote=True)
             await bot.send_message(chat_id=user_id, text=f"<b>ʜᴇʏ {user.mention},\n\n✨ ʏᴏᴜʀ ᴀᴄᴄᴏᴜɴᴛ ʜᴀs ʙᴇᴇɴ ʀᴇᴍᴏᴠᴇᴅ ᴛᴏ ᴏᴜʀ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴ\n\nᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴘʟᴀɴ ʜᴇʀᴇ /myplan</b>")
