@@ -39,7 +39,7 @@ class Config(object):
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
 
     # premium account string session required 😢 
-    STRING_SESSION = os.environ.get("STRING_SESSION", "6558711318")
+    STRING_SESSION = os.environ.get("STRING_SESSION", "")
     
     # database config
     DB_NAME = os.environ.get("DB_NAME","Digital_Rename_Bot")     
