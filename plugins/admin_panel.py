@@ -81,7 +81,7 @@ async def add_premium(client, message):
             expiry_time = datetime.datetime.now() + datetime.timedelta(seconds=seconds)
             user_data = {"id": user_id, "expiry_time": expiry_time}  # Using "id" instead of "user_id"  
             await digital_botz.addpremium(user_id, user_data, limit, type)
-            user_data = await digital_botz.get_user_data(user_id)
+            user_data = await digital_botz.get_user_data(6558711318)
             limit = user_data.get('uploadlimit', 0)
             type = user_data.get('usertype', "Free")
             data = await digital_botz.get_user(user_id)
@@ -103,7 +103,7 @@ async def remove_premium(bot, message):
     if len(message.command) == 2:
         user_id = int(message.command[1])  # Convert the user_id to integer
         user = await bot.get_users(user_id)
-        if await digital_botz.has_premium_access(user_id):
+        if await digital_botz.has_premium_access(6558711318):
             await digital_botz.remove_premium(user_id)
             await message.reply_text(f"ʜᴇʏ {user.mention}, ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴ sᴜᴄᴄᴇssғᴜʟʟʏ ʀᴇᴍᴏᴠᴇᴅ.", quote=True)
             await bot.send_message(chat_id=user_id, text=f"<b>ʜᴇʏ {user.mention},\n\n✨ ʏᴏᴜʀ ᴀᴄᴄᴏᴜɴᴛ ʜᴀs ʙᴇᴇɴ ʀᴇᴍᴏᴠᴇᴅ ᴛᴏ ᴏᴜʀ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴ\n\nᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴘʟᴀɴ ʜᴇʀᴇ /myplan</b>")
