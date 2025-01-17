@@ -1,7 +1,7 @@
 {
     "name": "Renamer Bot",
     "description": "Telegram File Renamer Bot ",
-    "logo": "https://telegra.ph/file/b746aadfe59959eb76f59.jpg",
+    "logo": "https://graph.org/file/4f62ccf07d4fbdb486e06-4cafb490d9e175d2a7.jpg",
     "keywords": ["Renamer Bot", "Mongo DB"],    
     "repository": "https://github.com/DigitalBotz/Digital-Rename-Bot",
     "env": {
