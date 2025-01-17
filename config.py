@@ -39,15 +39,15 @@ class Config(object):
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
 
     # premium account string session required 😢 
-    STRING_SESSION = os.environ.get("STRING_SESSION", "")
+    STRING_SESSION = os.environ.get("STRING_SESSION", "6558711318")
     
     # database config
     DB_NAME = os.environ.get("DB_NAME","Digital_Rename_Bot")     
     DB_URL = os.environ.get("DB_URL","")
  
     # other configs
-    RKN_PIC = os.environ.get("RKN_PIC", "https://telegra.ph/file/b746aadfe59959eb76f59.jpg")
-    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6705898491').split()]
+    RKN_PIC = os.environ.get("RKN_PIC", "https://graph.org/file/4f62ccf07d4fbdb486e06-4cafb490d9e175d2a7.jpg")
+    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6558711318').split()]
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002123429361"))
 
     # free upload limit 
@@ -57,7 +57,7 @@ class Config(object):
     try:
         FORCE_SUB = int(os.environ.get("FORCE_SUB", "")) 
     except:
-        FORCE_SUB = os.environ.get("FORCE_SUB", "Digital_Botz")
+        FORCE_SUB = os.environ.get("FORCE_SUB", "TNMCartoon")
         
     # wes response configuration     
     PORT = int(os.environ.get("PORT", "8080"))
